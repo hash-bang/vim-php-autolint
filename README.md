@@ -1,11 +1,10 @@
-phpLint.vim
-===========
+VIM-PHP-AutoLint
+================
+Short VIM script to automatically lint saved PHP code and display any errors in a popup window.
 
-This is a very simple plugin that calls "php -l" when the currently open .php file is saved.
+This project is a fork of https://github.com/markbiek/phpLint.vim with a few alterations to make it work ok with Pathogen.
 
-It assumes that PHP is installed and is in your executable path.
-
-
-Credits
-===========
-This plugin is a direct pickup of the excellent [lint.vim](http://www.vim.org/scripts/script.php?script_id=2578) plugin by [Joe Stelmach](https://github.com/joestelmach). I just tweaked it to call `php` instead of `jslint`.
+Installation
+============
+1. Install [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332) 
+2. Clone this repository inside your ~/.vim/bundle directory.
