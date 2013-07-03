@@ -20,7 +20,7 @@ endif
 autocmd BufWritePost,FileWritePost *.php call PHPLint()
 autocmd BufWinLeave * call s:MaybeClearCursorLineColor()
 
-" Runs the current file through javascript lint and 
+" Runs the current file through PHP lint and 
 " opens a quickfix window with any warnings
 function PHPLint() 
   " run syntax on the current file
@@ -52,7 +52,7 @@ function PHPLint()
     " delete the temp file
     call delete(quickfix_tmpfile_name)
 
-  " if no javascript warnings are found, we revert the cursorline color
+  " if no PHP warnings are found, we revert the cursorline color
   " and close the quick fix window
   else 
     call s:ClearCursorLineColor()
@@ -115,4 +115,3 @@ function s:ClearCursorLineColor()
     endif
   endif
 endfunction
-
